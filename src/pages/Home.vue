@@ -25,7 +25,7 @@
         <div class="card">
           <h5 class="card-header">Pages Web dynamiques</h5>
           <div class="card-body">
-            <p class="card-text"><a href="https://vuejs.org/" target="blanck">Vue js</a> permet de créer de jolies pages dynamiques pour vos application web.</p>
+            <p class="card-text"><a href="https://vuejs.org/" target="blanck">Vue js</a> permet de créer de jolies pages dynamiques pour vos applications web.</p>
           </div>
                     <figure class="card-img-top" :style="{'background-image': `url(${require('../assets/vue.png')})`}"></figure>
 
