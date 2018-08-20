@@ -33,12 +33,13 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 // Add the specific imported icons
 library.add(faEnvelope)
 library.add(faUser)
+library.add(faLinkedin)
 library.add(faTwitter)
 library.add(faGithub)
 
