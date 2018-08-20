@@ -9,7 +9,7 @@
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><font-awesome-icon icon="envelope"/> jocelyn@griselle.io</li>
         <li class="list-group-item"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }"/><a target="blank" href="https://twitter.com/jocelyngriselle">  https://twitter.com/jocelyngriselle</a></li>
-        <li class="list-group-item"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }"/><a target="blank" href="https//github.com/jocelyngriselle"> https//github.com/jocelyngriselle</a></li>
+        <li class="list-group-item"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }"/><a target="blank" href="https://github.com/jocelyngriselle"> https//github.com/jocelyngriselle</a></li>
       </ul>
     </div>
   </section>
