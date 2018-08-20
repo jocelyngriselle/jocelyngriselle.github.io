@@ -13,7 +13,7 @@
                 <p class="card-text">
                   J'adore Python. J'aime le web. J'aime tout ce qui gravite autour
                   et me challenge quotidiennement.
-                  Apès 7 années de salariat dans des startup et grandes entreprises 
+                  Après 7 années de salariat dans des startup et grandes entreprises 
                   dont 5 en tant que développeur web j'ai décidé 
                   de me lancer à mon compte ! 
                 </p>
