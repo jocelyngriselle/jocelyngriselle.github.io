@@ -1,5 +1,5 @@
 <template>
-  <section class="section is-medium">
+  <section class="container">
     <h1 id="title" class="title">Contact</h1>
     <div class="container card">
       <div class="card-body">
@@ -23,7 +23,4 @@
 </script>
 
 <style scoped>
-.card {
-  max-width: 50%;
-}
 </style>

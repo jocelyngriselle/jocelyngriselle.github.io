@@ -1,19 +1,23 @@
 <template>
-  <b-navbar :sticky="true" toggleable="md">
-  <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-  <b-navbar-brand href="#"><router-link class="navbar-item" to="/home">Acceuil</router-link></b-navbar-brand>
-  <b-collapse is-nav id="nav_collapse">
-    <b-navbar-nav>
-      <b-nav-item href="#" disabled></b-nav-item>
-      <b-nav-item href="#" disabled><router-link class="navbar-item" to="/about">A propos</router-link></b-nav-item>
-      <b-nav-item href="#" disabled><router-link class="navbar-item" to="/portofolio">Portofolio</router-link></b-nav-item>
-      <b-nav-item href="#" disabled><router-link class="navbar-item" to="/contact">Contact</router-link></b-nav-item>
-    </b-navbar-nav>
-    <!-- Right aligned nav items -->
-    <b-navbar-nav class="ml-auto">
-    </b-navbar-nav>
-  </b-collapse>
-</b-navbar>
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <div class="navbar-item"><strong>JG</strong></div>
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <router-link class="navbar-item" to="/home">Home</router-link>
+        <router-link class="navbar-item" to="/about">A propos</router-link>
+        <router-link class="navbar-item" to="/skills">Compétences</router-link>
+        <router-link class="navbar-item" to="/portofolio">Portofolio</router-link>
+        <router-link class="navbar-item" to="/contact">Contact</router-link>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -23,13 +27,20 @@
 </script>
 
 <style scoped>
-  .navbar {
-    background-color: #003b46;
-    color: white;
-    padding:10px;
-  }
-  .navbar-item {
-    color: white;
-  }
-
+nav {
+   font-size: large;
+   background-color: inherit;
+}
+.navbar-menu {
+  margin-right: 30px;
+}
+a.navbar-item.is-active, .navbar-link.is-active {
+  color: #23D160;
+}
+a:hover {
+  color: #23D160;
+}
+strong {
+  font-size: x-large;
+}
 </style>
