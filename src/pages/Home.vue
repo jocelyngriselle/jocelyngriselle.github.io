@@ -1,14 +1,31 @@
 <template>
-  <section>
-    <figure class="image is-128x128"><img class="is-rounded" src="../assets/me_head.jpg"></figure>
-    <article class="content is-medium">
-      <h3>Bonjour, je suis <em>Jocelyn Griselle</em>, développeur
-        <em>web</em> fullstack <em>freelance</em>. </h3>
-      <h4>"lalaallalalal lala lal lala l lala
-        <em>Python</em> lalaallalalalalal lala lala lal lala l lala <em>Nantes</em>.
-        lalala a lallalalal la <em>Javascript</em> lalaallalalal la l lala lala lal lala l lala"</h4>
-    </article>
-  </section>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column">
+                <h1 class="title is-2">
+                  Jocelyn Griselle
+                </h1>
+                <h2 class="subtitle is-4">
+                  Développeur <em>Python</em> &
+                  <em>Web</em> fullstack <br/>freelance
+                   sur <em>Nantes</em>.
+                </h2>
+                <br>
+                <p><a class="button is-medium is-success is-outlined">Contactez moi</a></p>
+            </div>
+            <div class="column">
+                <figure class="image is-4by3">
+                    <img src="../assets/me.jpg" alt="Description">
+                </figure>
+            </div>
+
+          </div>
+      </div>
+    </div>
+</section>
+
 </template>
 
 <script>
@@ -18,12 +35,10 @@ export default {
 </script>
 
 <style scoped>
-article {
-  flex: 2.5;
-  margin-left: 20px;
-}
-figure {
-  flex: 1;
+
+img {
+  padding: 5px;
+  border: 1px solid #ccc;
 }
 em {
   color: #23D160;

@@ -4,7 +4,6 @@
     <transition enter-active-class="animated fadeInLeft">
       <router-view/>
     </transition>
-    <Side/>
   </div>
 </template>
 
@@ -44,17 +43,7 @@ html {
 #app {
   font-family: 'Didact Gothic', sans-serif;
 }
-section  {
-  /*background-color: lightblue;*/
-  margin-top: 10%;
-  margin-left: 10%;
-  display: flex;
-  max-width: 70%;
-  max-height: 80%;
-  flex-direction: row;
-  margin-bottom: 20px;
 
-}
 a {
   text-decoration: none;
 }

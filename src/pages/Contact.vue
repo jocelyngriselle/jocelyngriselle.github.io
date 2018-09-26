@@ -1,17 +1,49 @@
 <template>
-  <section class="container">
-    <h1 id="title" class="title">Contact</h1>
-    <div class="container card">
-      <div class="card-body">
-        <h5 class="card-title"><font-awesome-icon icon="user"/> Jocelyn Griselle</h5>
-        <p class="card-text">N'hésitez pas à me contacter pour toutes vos demandes !</p>
+  <section class="is-vcentered">
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48 ">
+              <img class="is-rounded" src="../assets/me_head.jpg" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-4">Jocelyn Griselle</p>
+            <p class="subtitle is-6">jocelyn@griselle.io</p>
+          </div>
+        </div>
+        <div class="content">
+          N'hésitez pas à me contacter pour toutes vos demandes.
+          <div class="navbar-item">
+            <a target="blank" href="https://www.linkedin.com/in/jocelyngriselle/">
+              <font-awesome-icon
+                size="lg"
+                :icon="{ prefix: 'fab', iconName: 'linkedin' }"
+                :style="{ color: 'black' }"
+              /> https://linkedin.com/jocelyngriselle
+            </a>
+          </div>
+          <div class="navbar-item">
+            <a target="blank" href="https://twitter.com/jocelyngriselle">
+              <font-awesome-icon
+                size="lg"
+                :icon="{ prefix: 'fab', iconName: 'twitter' }"
+                :style="{ color: 'black' }"
+              /> https://twitter.com/jocelyngriselle
+            </a>
+          </div>
+          <div class="navbar-item">
+            <a target="blank" href=" https://github.com/jocelyngriselle">
+              <font-awesome-icon
+                size="lg"
+                :icon="{ prefix: 'fab', iconName: 'github'}"
+                :style="{ color: 'black' }"
+              /> https://github.com/jocelyngriselle
+            </a>
+          </div>
+        </div>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"><font-awesome-icon icon="envelope"/> jocelyn@griselle.io</li>
-        <li class="list-group-item"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }"/><a target="blank" href="https://www.linkedin.com/in/jocelyngriselle/"> https://www.linkedin.com/in/jocelyngriselle</a></li>
-        <li class="list-group-item"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }"/><a target="blank" href="https://twitter.com/jocelyngriselle">  https://twitter.com/jocelyngriselle</a></li>
-        <li class="list-group-item"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }"/><a target="blank" href="https://github.com/jocelyngriselle"> https//github.com/jocelyngriselle</a></li>
-      </ul>
     </div>
   </section>
 </template>
@@ -23,4 +55,7 @@
 </script>
 
 <style scoped>
+section {
+  display: flex;
+}
 </style>

@@ -1,18 +1,34 @@
 <template>
-  <section>
-    <div class="tabs is-medium">
-      <ul>
-        <li v-on:click="activeFilter=filter.name" v-for="filter in filters" :class="[filter.class, activated(filter.name)]">
-          <a>{{ filter.name }}</a>
-        </li>
-      </ul>
+  <section class="container">
+    <div class="columns is-vcentered">
+      <div class="column">
+        <div class="tabs is-medium">
+          <ul>
+            <li v-on:click="activeFilter=filter.name" v-for="filter in filters" :class="[filter.class, activated(filter.name)]">
+              <a>{{ filter.name }}</a>
+            </li>
+          </ul>
+        </div>
+          <transition-group
+            tag="ul"
+            leave-active-class="animated slideOutLeft"
+            enter-active-class="animated slideInLeft"
+            move-class="animated slideInUp">
+            <li :key="skill.name" v-for="skill in storeFilter(activeFilter)">
+              <p class="level-left">{{ skill.name }}</p>
+              <progress v-bind:class="skill.filter.class" class="progress" :value="skill.value" max="100"></progress>
+            </li>
+          </transition-group>
+      </div>
+      <div class="column has-text-centered content">
+        <h1>Ce que je peux faire pour vous:</h1>
+        <p>Creer un site Web sur mesure</p>
+        <p>Maintenir une API pour mobile</p>
+        <p>Creer une Datavizualisation sur le Web</p>
+        <p>Extraire des données de milliers de sites web</p>
+        <p></p>
+      </div>
     </div>
-      <transition-group tag="ul" leave-active-class="animated fadeOutRight" enter-active-class="animated fadeInLeft delay-2s">
-        <li :key="skill.name" v-for="skill in storeFilter(activeFilter)">
-          <p class="level-left">{{ skill.name }}</p>
-          <progress v-bind:class="skill.filter.class" class="progress" :value="skill.value" max="100"></progress>
-        </li>
-      </transition-group>
   </section>
 </template>
 
@@ -53,6 +69,7 @@ export default {
       {name: "Git", value: 80, filter: this.filters[5]},
       {name: "Postgresql", value: 80, filter: this.filters[1]},
       {name: "Scrapy", value: 70, filter: this.filters[1]},
+      {name: "Méthode Agile", value: 70, filter: this.filters[5]},
       {name: "Html", value: 70, filter: this.filters[2]},
       {name: "Docker", value: 60, filter: this.filters[3]},
       {name: "Vuejs", value: 60, filter: this.filters[2]},
@@ -79,9 +96,10 @@ export default {
 </script>
 
 <style scoped>
-section {
-  width: 90%;
-  flex-direction: column;
+
+
+.flip-list-move {
+  transition: transform 1s;
 }
 
 .tabs li a {color: black;}

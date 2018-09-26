@@ -1,9 +1,7 @@
 <template>
-  <section>
+  <section class="container">
     <article class="content is-medium">
       <h1>Interview avec moi même:</h1>
-      <figure><img src="../assets/me.jpg"></figure>
-
       <h5>Comment vous êtes vous lancé dans l'informatique ?</h5>
       <p>C'est venu petit à petit, j'aimais bien les maths donc je suis
         allé en fac de mathématiques ou j'ai découvert l'informatique et
