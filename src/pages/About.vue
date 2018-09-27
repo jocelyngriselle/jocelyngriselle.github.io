@@ -31,7 +31,5 @@ export default {
 </script>
 
 <style scoped>
-article {
-  flex: 70%;
-}
+
 </style>

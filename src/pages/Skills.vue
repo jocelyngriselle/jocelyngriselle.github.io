@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section>
     <div class="columns is-vcentered">
       <div class="column">
         <div class="tabs is-medium">
@@ -26,6 +26,7 @@
         <p>Maintenir une API pour mobile</p>
         <p>Creer une Datavizualisation sur le Web</p>
         <p>Extraire des données de milliers de sites web</p>
+        <p>Auditer un site web</p>
         <p></p>
       </div>
     </div>
@@ -96,7 +97,9 @@ export default {
 </script>
 
 <style scoped>
+section {
 
+}
 
 .flip-list-move {
   transition: transform 1s;

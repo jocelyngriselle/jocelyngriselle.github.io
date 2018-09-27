@@ -13,7 +13,7 @@
                    sur <em>Nantes</em>.
                 </h2>
                 <br>
-                <p><a class="button is-medium is-success is-outlined">Contactez moi</a></p>
+                <p><router-link to="/contact"><a class="button is-medium is-success is-outlined">Rencontrons-nous</a></router-link></p>
             </div>
             <div class="column">
                 <figure class="image is-4by3">

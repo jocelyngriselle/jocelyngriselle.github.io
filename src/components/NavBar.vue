@@ -1,12 +1,11 @@
 <template>
-  <nav class="navbar is-transparent">
+  <nav class="navbar is-transparent is-fixed-top">
     <div class="navbar-brand">
       <div class="navbar-item">
         <a target="blank" href="mailto:jocelyn@griselle.io">
           <font-awesome-icon
             size="lg"
             icon="envelope"
-            :style="{ color: 'black' }"
           />
         </a>
       </div>
@@ -16,7 +15,6 @@
           <font-awesome-icon
             size="lg"
             :icon="{ prefix: 'fab', iconName: 'linkedin' }"
-            :style="{ color: 'black' }"
           />
         </a>
       </div>
@@ -26,7 +24,6 @@
           <font-awesome-icon
             size="lg"
             :icon="{ prefix: 'fab', iconName: 'twitter' }"
-            :style="{ color: 'black' }"
           />
         </a>
       </div>
@@ -36,18 +33,17 @@
           <font-awesome-icon
             size="lg"
             :icon="{ prefix: 'fab', iconName: 'github'}"
-            :style="{ color: 'black' }"
           />
         </a>
 
       </div>
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <div class="navbar-burger burger" data-target="navbar">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
-    <div class="navbar-menu">
+    <div id="navbar" class="navbar-menu">
       <div class="navbar-end">
         <router-link class="navbar-item" to="/home">Home</router-link>
         <router-link class="navbar-item" to="/about">A propos</router-link>
@@ -79,6 +75,24 @@ a.navbar-item.is-active, .navbar-link.is-active {
 a:hover {
   color: #23D160;
 }
+
+svg {
+  color: black;
+}
+
+svg:hover {
+  fill: #23D160;
+  color: #23D160;
+}
+svg {
+  color: black;
+}
+
+svg:hover {
+  fill: #23D160;
+  color: #23D160;
+}
+
 strong {
   font-size: x-large;
 }
