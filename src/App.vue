@@ -34,26 +34,23 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
-html, body, #app {
-}
 
 #app {
   font-family: 'Didact Gothic', sans-serif;
 }
-
 section {
   display: flex;
-  margin-top: 30px;
+  padding-top: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 a {
   text-decoration: none;
 }
-
 navbar-item svg:hover {
   fill: #23D160;
 }
-
 a:hover {
   color: #23D160;
 }

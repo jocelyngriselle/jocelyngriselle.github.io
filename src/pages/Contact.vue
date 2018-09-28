@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class=" hero is-fullheight">
         <div class="card">
           <div class="card-content">
             <div class="media">
@@ -56,9 +56,9 @@
 
 <style scoped>
 section {
-  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: center;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <section>
-    <div class="columns is-vcentered">
-      <div class="column">
+  <section >
+    <div class="columns">
+      <div class="column is-three-fifths">
         <div class="tabs is-medium">
           <ul>
             <li v-on:click="activeFilter=filter.name" v-for="filter in filters" :class="[filter.class, activated(filter.name)]">
@@ -9,25 +9,35 @@
             </li>
           </ul>
         </div>
-          <transition-group
-            tag="ul"
-            leave-active-class="animated slideOutLeft"
-            enter-active-class="animated slideInLeft"
-            move-class="animated slideInUp">
-            <li :key="skill.name" v-for="skill in storeFilter(activeFilter)">
-              <p class="level-left">{{ skill.name }}</p>
-              <progress v-bind:class="skill.filter.class" class="progress" :value="skill.value" max="100"></progress>
-            </li>
-          </transition-group>
+        <transition-group
+          tag="div"
+          class="skills"
+          leave-active-class="animated fadeOut"
+          enter-active-class="animated fadeIn"
+          move-class="animated slideInUp">
+          <div :key="skill.name" v-for="skill in storeFilter(activeFilter)">
+            <figure class="image"><img :src="skill.src" :alt="skill.name"></figure>
+          </div>
+        </transition-group>
       </div>
-      <div class="column has-text-centered content">
-        <h1>Ce que je peux faire pour vous:</h1>
-        <p>Creer un site Web sur mesure</p>
-        <p>Maintenir une API pour mobile</p>
-        <p>Creer une Datavizualisation sur le Web</p>
-        <p>Extraire des données de milliers de sites web</p>
-        <p>Auditer un site web</p>
-        <p></p>
+      <div class="column has-text-centered is-vcentered is-two-fifths">
+        <div class="content">
+          <h1>Ce que je peux faire pour vous:</h1>
+          <li>Créer un site Web sur mesure</li>
+          <li>Maintenir une API pour appication Web/Mobile</li>
+          <li>Creer une Datavizualisation sur le Web</li>
+          <li>Extraire des données de milliers de sites Web</li>
+          <li>Donner une formation Web / Python</li>
+          <li>Auditer votre site Web</li>
+        </div>
+        <div class="content">
+          <h1>Sans oublier l'humain:</h1>
+          <li>Agilité</li>
+          <li>Trasparence</li>
+          <li>Communication</li>
+          <li>Bonne humeur</li>
+          <li>Agilité</li>
+        </div>
       </div>
     </div>
   </section>
@@ -49,14 +59,13 @@ export default {
         }, {
           name: 'Frontend',
           class: 'is-primary'
-        }, {
-          name: 'Ops',
-          class: 'is-link'
-        }, {
-          name: 'Mobile',
-          class: 'is-warning'
-        }, {
-          name: 'Outils',
+        },
+        {
+          name: 'Frontend',
+          class: 'is-info'
+        },
+        {
+          name: 'Frontend',
           class: 'is-info'
         }
       ],
@@ -64,20 +73,30 @@ export default {
     }
   },
   created() {
+    var images = require.context('../assets/', false, /\.png$/)
+    function getImgUrl(skill) {
+      return images('./' + skill + ".png")
+    }
     this.skills = [
-      {name: "Python", value: 80, filter: this.filters[1]},
-      {name: "Django", value: 80, filter: this.filters[1]},
-      {name: "Git", value: 80, filter: this.filters[5]},
-      {name: "Postgresql", value: 80, filter: this.filters[1]},
-      {name: "Scrapy", value: 70, filter: this.filters[1]},
-      {name: "Méthode Agile", value: 70, filter: this.filters[5]},
-      {name: "Html", value: 70, filter: this.filters[2]},
-      {name: "Docker", value: 60, filter: this.filters[3]},
-      {name: "Vuejs", value: 60, filter: this.filters[2]},
-      {name: "Javascript", value: 60, filter: this.filters[2]},
-      {name: "Css", value: 30, filter: this.filters[2]},
-      {name: "Mongodb", value: 10, filter: this.filters[1]},
-      {name: "React native", value: 10, filter: this.filters[4]}
+      {name: "Python", value: 80, filter: this.filters[1], src:getImgUrl("python")},
+      {name: "Django", value: 80, filter: this.filters[1], src:getImgUrl("django")},
+      {name: "Flask", value: 80, filter: this.filters[1], src:getImgUrl("flask")},
+      {name: "Git", value: 80, filter: this.filters[5], src:getImgUrl("github")},
+      {name: "Postgresql", value: 80, filter: this.filters[1], src:getImgUrl("postgresql")},
+      {name: "Scrapy", value: 70, filter: this.filters[1], src:getImgUrl("scrapy")},
+      {name: "Mongodb", value: 10, filter: this.filters[1], src:getImgUrl("mongodb")},
+      {name: "Amazon Web Services", value: 10, filter: this.filters[1], src:getImgUrl("amazon")},
+      {name: "Docker", value: 60, filter: this.filters[3], src:getImgUrl("docker")},
+      {name: "Vuejs", value: 60, filter: this.filters[2], src:getImgUrl("vue")},
+      {name: "Heroku", value: 70, filter: this.filters[2], src:getImgUrl("heroku")},
+      {name: "React", value: 10, filter: this.filters[4], src:getImgUrl("react")},
+      {name: "Elastic Stack", value: 60, filter: this.filters[3], src:getImgUrl("elk")},
+      {name: "Css", value: 30, filter: this.filters[2], src:getImgUrl("css")},
+      {name: "React native", value: 10, filter: this.filters[4], src:getImgUrl("reactnative")},
+      {name: "Html", value: 70, filter: this.filters[2], src:getImgUrl("html")},
+      {name: "Kubernetes", value: 70, filter: this.filters[2], src:getImgUrl("kubernetes")},
+
+
     ]
   },
   methods: {
@@ -98,9 +117,30 @@ export default {
 
 <style scoped>
 section {
-
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 5%;
 }
 
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+figure {
+  margin-right: 20px;
+  height: 76px;
+  width: 128px;
+}
+
+figure:hover {
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
+}
 .flip-list-move {
   transition: transform 1s;
 }
@@ -122,8 +162,4 @@ section {
 
 .tabs li.is-warning:hover a {border-bottom-color: #FFDD57;}
 .tabs li.is-active.is-warning a {color: #FFDD57;border-bottom-color: #FFDD57;}
-
-
-
-
 </style>
