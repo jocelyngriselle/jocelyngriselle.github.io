@@ -36,7 +36,6 @@
           <li>Trasparence</li>
           <li>Communication</li>
           <li>Bonne humeur</li>
-          <li>Agilité</li>
         </div>
       </div>
     </div>
