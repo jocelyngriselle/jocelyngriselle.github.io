@@ -46,9 +46,9 @@
     <div id="navbar" class="navbar-menu">
       <div class="navbar-end">
         <router-link class="navbar-item" to="/home">Home</router-link>
-        <router-link class="navbar-item" to="/about">A propos</router-link>
         <router-link class="navbar-item" to="/skills">Compétences</router-link>
-        <router-link class="navbar-item" to="/portofolio">Portofolio</router-link>
+        <router-link class="navbar-item" to="/portofolio">Réalisations</router-link>
+        <router-link class="navbar-item" to="/about">A propos</router-link>
         <router-link class="navbar-item" to="/contact">Contact</router-link>
       </div>
     </div>

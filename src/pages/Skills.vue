@@ -1,44 +1,22 @@
 <template>
-  <section >
-    <div class="columns">
-      <div class="column is-three-fifths">
+  <section>
         <div class="tabs is-medium">
           <ul>
-            <li v-on:click="activeFilter=filter.name" v-for="filter in filters" :class="[filter.class, activated(filter.name)]">
+            <li v-on:click="activeFilter=filter.name"
+                v-for="filter in filters"
+                :class="[filter.class, activated(filter.name)]">
               <a>{{ filter.name }}</a>
             </li>
           </ul>
         </div>
         <transition-group
+          name="skill"
           tag="div"
-          class="skills"
-          leave-active-class="animated fadeOut"
-          enter-active-class="animated fadeIn"
-          move-class="animated slideInUp">
-          <div :key="skill.name" v-for="skill in storeFilter(activeFilter)">
+          class="skills">
+          <div :key="skill.name" v-for="skill in filteredSkills">
             <figure class="image"><img :src="skill.src" :alt="skill.name"></figure>
           </div>
         </transition-group>
-      </div>
-      <div class="column has-text-centered is-vcentered is-two-fifths">
-        <div class="content">
-          <h1>Ce que je peux faire pour vous:</h1>
-          <li>Créer un site Web sur mesure</li>
-          <li>Maintenir une API pour appication Web/Mobile</li>
-          <li>Creer une Datavizualisation sur le Web</li>
-          <li>Extraire des données de milliers de sites Web</li>
-          <li>Donner une formation Web / Python</li>
-          <li>Auditer votre site Web</li>
-        </div>
-        <div class="content">
-          <h1>Sans oublier l'humain:</h1>
-          <li>Agilité</li>
-          <li>Trasparence</li>
-          <li>Communication</li>
-          <li>Bonne humeur</li>
-        </div>
-      </div>
-    </div>
   </section>
 </template>
 
@@ -49,26 +27,13 @@ export default {
     return {
       activeFilter: 'Tous',
       filters: [
-        {
-          name: 'Tous',
-          class: ''
-        }, {
-          name: 'Backend',
-          class: 'is-success'
-        }, {
-          name: 'Frontend',
-          class: 'is-primary'
-        },
-        {
-          name: 'Frontend',
-          class: 'is-info'
-        },
-        {
-          name: 'Frontend',
-          class: 'is-info'
-        }
+        {name: 'Tous', class: ''},
+        {name: 'Backend', class: 'is-success'},
+        {name: 'Ops', class: 'is-warning'},
+        {name: 'Frontend', class: 'is-primary'},
+        {name: 'Outils', class: 'is-link'}
       ],
-      skills : []
+      skills : [],
     }
   },
   created() {
@@ -80,36 +45,44 @@ export default {
       {name: "Python", value: 80, filter: this.filters[1], src:getImgUrl("python")},
       {name: "Django", value: 80, filter: this.filters[1], src:getImgUrl("django")},
       {name: "Flask", value: 80, filter: this.filters[1], src:getImgUrl("flask")},
-      {name: "Git", value: 80, filter: this.filters[5], src:getImgUrl("github")},
+      {name: "Rest", value: 80, filter: this.filters[1], src:getImgUrl("rest")},
+      {name: "GitHub", value: 80, filter: this.filters[4], src:getImgUrl("github")},
+      {name: "GitLab", value: 80, filter: this.filters[4], src:getImgUrl("gitlab")},
       {name: "Postgresql", value: 80, filter: this.filters[1], src:getImgUrl("postgresql")},
       {name: "Scrapy", value: 70, filter: this.filters[1], src:getImgUrl("scrapy")},
       {name: "Mongodb", value: 10, filter: this.filters[1], src:getImgUrl("mongodb")},
-      {name: "Amazon Web Services", value: 10, filter: this.filters[1], src:getImgUrl("amazon")},
-      {name: "Docker", value: 60, filter: this.filters[3], src:getImgUrl("docker")},
-      {name: "Vuejs", value: 60, filter: this.filters[2], src:getImgUrl("vue")},
+      {name: "Amazon Web Services", value: 10, filter: this.filters[2], src:getImgUrl("amazon")},
+      {name: "Docker", value: 60, filter: this.filters[2], src:getImgUrl("docker")},
+      {name: "Vuejs", value: 60, filter: this.filters[3], src:getImgUrl("vue")},
+      {name: "Netlify", value: 60, filter: this.filters[2], src:getImgUrl("netlify")},
       {name: "Heroku", value: 70, filter: this.filters[2], src:getImgUrl("heroku")},
-      {name: "React", value: 10, filter: this.filters[4], src:getImgUrl("react")},
-      {name: "Elastic Stack", value: 60, filter: this.filters[3], src:getImgUrl("elk")},
-      {name: "Css", value: 30, filter: this.filters[2], src:getImgUrl("css")},
-      {name: "React native", value: 10, filter: this.filters[4], src:getImgUrl("reactnative")},
-      {name: "Html", value: 70, filter: this.filters[2], src:getImgUrl("html")},
-      {name: "Kubernetes", value: 70, filter: this.filters[2], src:getImgUrl("kubernetes")},
-
-
-    ]
+      {name: "React", value: 10, filter: this.filters[3], src:getImgUrl("react")},
+      {name: "Elastic Stack", value: 60, filter: this.filters[1], src:getImgUrl("elk")},
+      {name: "Css", value: 30, filter: this.filters[3], src:getImgUrl("css")},
+      {name: "Html", value: 70, filter: this.filters[3], src:getImgUrl("html")},
+      {name: "Trello", value: 70, filter: this.filters[4], src:getImgUrl("trello")},
+      {name: "Kubernetes", value: 70, filter: this.filters[2], src:getImgUrl("kubernetes")}
+    ];
   },
   methods: {
     activated(filter) {
       if(filter==this.activeFilter)
       return "is-active"
-    },
-    storeFilter(filter) {
-      const res = this.skills
-      if (filter && filter!='Tous') {
-        return this.skills.filter(skill => skill.filter.name === filter);
-      }
-      return res
     }
+  },
+  computed: {
+    filteredSkills: function() {
+			var vm = this;
+			var filter = vm.activeFilter;
+
+			if(filter === "Tous") {
+				return vm.skills;
+			} else {
+				return vm.skills.filter(function(skill) {
+					return skill.filter.name === filter;
+				});
+			}
+		}
   }
 }
 </script>
@@ -127,11 +100,41 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: space-around;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+/* base */
+.company {
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
+/* moving */
+.skill-move {
+  transition: all 600ms ease-in-out 50ms;
+}
+
+/* appearing */
+.skill-enter-active {
+  transition: all 400ms ease-out;
+}
+
+/* disappearing */
+.skill-leave-active {
+  transition: all 200ms ease-in;
+  position: absolute;
+  z-index: 0;
+}
+
+/* appear at / disappear to */
+.skill-enter,
+.skill-leave-to {
+  opacity: 0;
 }
 
 figure {
-  margin-right: 20px;
+  margin-right: 40px;
   height: 76px;
   width: 128px;
 }
@@ -140,9 +143,7 @@ figure:hover {
   -webkit-animation: bounce 1s;
   animation: bounce 1s;
 }
-.flip-list-move {
-  transition: transform 1s;
-}
+
 
 .tabs li a {color: black;}
 .tabs li.is-active a {border-bottom-color: black;}
