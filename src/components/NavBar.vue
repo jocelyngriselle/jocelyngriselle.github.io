@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-transparent is-fixed-top">
+  <nav class="navbar is-fixed-top">
     <div class="navbar-brand">
       <div class="navbar-item">
         <a target="blank" href="mailto:jocelyn@griselle.io">
@@ -9,7 +9,6 @@
           />
         </a>
       </div>
-
         <div class="navbar-item">
         <a target="blank" href="https://www.linkedin.com/in/jocelyngriselle/">
           <font-awesome-icon
@@ -18,7 +17,6 @@
           />
         </a>
       </div>
-
         <div class="navbar-item">
         <a target="blank" href="https://twitter.com/jocelyngriselle">
           <font-awesome-icon
@@ -27,7 +25,6 @@
           />
         </a>
       </div>
-
         <div class="navbar-item">
         <a target="blank" href="https://github.com/jocelyngriselle">
           <font-awesome-icon
@@ -35,15 +32,16 @@
             :icon="{ prefix: 'fab', iconName: 'github'}"
           />
         </a>
-
       </div>
-      <div class="navbar-burger burger" data-target="navbar">
+      <div class="navbar-burger burger"
+          @click="showNav = !showNav"
+          :class="{ 'is-active': showNav }">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
-    <div id="navbar" class="navbar-menu">
+    <div class="navbar-menu" :class="{ 'is-active': showNav }">
       <div class="navbar-end">
         <router-link class="navbar-item" to="/home">Home</router-link>
         <router-link class="navbar-item" to="/skills">Compétences</router-link>
@@ -57,14 +55,20 @@
 
 <script>
     export default {
-        name: "NavBar"
+        name: "NavBar",
+        data() {
+          return {
+  	       showNav: false
+         }
+       }
     }
 </script>
 
 <style scoped>
 nav {
    font-size: large;
-   background-color: inherit;
+   background-color: white;
+   z-index: 1;
 }
 .navbar-menu {
   margin-right: 30px;
