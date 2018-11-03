@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar/>
-    <transition enter-active-class="animated fadeInLeft">
+    <transition enter-active-class="animated fadeInRight">
       <router-view/>
     </transition>
   </div>
@@ -12,12 +12,12 @@ import Vue from 'vue'
 import NavBar from "./components/NavBar";
 import Side from "./components/Side";
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faEnvelope)
-library.add(faUser)
+library.add(faFile)
 library.add(faLinkedin)
 library.add(faTwitter)
 library.add(faGithub)

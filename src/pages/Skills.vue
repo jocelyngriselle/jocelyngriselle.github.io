@@ -14,7 +14,7 @@
           tag="div"
           class="skills">
           <div :key="skill.name" v-for="skill in filteredSkills">
-            <figure class="image"><img :src="skill.src" :alt="skill.name"></figure>
+            <a :href="skill.url" target="_blank"><figure class="image"><img :src="skill.src" :alt="skill.name"></figure></a>
           </div>
         </transition-group>
   </section>
@@ -42,26 +42,29 @@ export default {
       return images('./' + skill + ".png")
     }
     this.skills = [
-      {name: "Python", value: 80, filter: this.filters[1], src:getImgUrl("python")},
-      {name: "Django", value: 80, filter: this.filters[1], src:getImgUrl("django")},
-      {name: "Flask", value: 80, filter: this.filters[1], src:getImgUrl("flask")},
-      {name: "Rest", value: 80, filter: this.filters[1], src:getImgUrl("rest")},
-      {name: "GitHub", value: 80, filter: this.filters[4], src:getImgUrl("github")},
-      {name: "GitLab", value: 80, filter: this.filters[4], src:getImgUrl("gitlab")},
-      {name: "Postgresql", value: 80, filter: this.filters[1], src:getImgUrl("postgresql")},
-      {name: "Scrapy", value: 70, filter: this.filters[1], src:getImgUrl("scrapy")},
-      {name: "Mongodb", value: 10, filter: this.filters[1], src:getImgUrl("mongodb")},
-      {name: "Amazon Web Services", value: 10, filter: this.filters[2], src:getImgUrl("amazon")},
-      {name: "Docker", value: 60, filter: this.filters[2], src:getImgUrl("docker")},
-      {name: "Vuejs", value: 60, filter: this.filters[3], src:getImgUrl("vue")},
-      {name: "Netlify", value: 60, filter: this.filters[2], src:getImgUrl("netlify")},
-      {name: "Heroku", value: 70, filter: this.filters[2], src:getImgUrl("heroku")},
-      {name: "React", value: 10, filter: this.filters[3], src:getImgUrl("react")},
-      {name: "Elastic Stack", value: 60, filter: this.filters[1], src:getImgUrl("elk")},
-      {name: "Css", value: 30, filter: this.filters[3], src:getImgUrl("css")},
-      {name: "Html", value: 70, filter: this.filters[3], src:getImgUrl("html")},
-      {name: "Trello", value: 70, filter: this.filters[4], src:getImgUrl("trello")},
-      {name: "Kubernetes", value: 70, filter: this.filters[2], src:getImgUrl("kubernetes")}
+      {name: "Python", filter: this.filters[1], src:getImgUrl("python"), url:"https://www.python.org"},
+      {name: "Django", filter: this.filters[1], src:getImgUrl("django"), url:"https://www.djangoproject.com/"},
+      {name: "Vuejs", filter: this.filters[3], src:getImgUrl("vue"), url:"https://vuejs.org/"},
+      {name: "Bulma", filter: this.filters[3], src:getImgUrl("bulma"), url:"https://bulma.io/"},
+      {name: "Flask", filter: this.filters[1], src:getImgUrl("flask"), url:"http://flask.pocoo.org/"},
+      {name: "Rest", filter: this.filters[1], src:getImgUrl("rest"), url:"https://www.django-rest-framework.org/"},
+      {name: "Redis", filter: this.filters[1], src:getImgUrl("redis"), url:"https://redis.io/"},
+      {name: "GitHub", filter: this.filters[4], src:getImgUrl("github"), url:"https://github.com/"},
+      {name: "GitLab", filter: this.filters[4], src:getImgUrl("gitlab"), url:"https://about.gitlab.com/"},
+      {name: "Postgresql", filter: this.filters[1], src:getImgUrl("postgresql"), url:"https://www.postgresql.org/"},
+      {name: "Scrapy", filter: this.filters[1], src:getImgUrl("scrapy"), url:"https://scrapy.org/"},
+      {name: "Mongodb", filter: this.filters[1], src:getImgUrl("mongodb"), url:"https://www.mongodb.com/fr"},
+      {name: "Amazon Web Services", filter: this.filters[2], src:getImgUrl("amazon"), url:"https://aws.amazon.com/fr/"},
+      {name: "Docker", filter: this.filters[2], src:getImgUrl("docker"), url:"https://www.docker.com/"},
+      {name: "Netlify", filter: this.filters[2], src:getImgUrl("netlify"), url:"https://www.netlify.com/"},
+      {name: "Heroku", filter: this.filters[2], src:getImgUrl("heroku"), url:"https://www.heroku.com/"},
+      {name: "React", filter: this.filters[3], src:getImgUrl("react"), url:"https://reactjs.org/"},
+      {name: "Elastic Stack", filter: this.filters[1], src:getImgUrl("elk"), url:"https://www.elastic.co/fr/"},
+      {name: "Boostrap", filter: this.filters[3], src:getImgUrl("bootstrap"), url:"https://getbootstrap.com/"},
+      {name: "Css", filter: this.filters[3], src:getImgUrl("css"), url:"https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"},
+      {name: "Html", filter: this.filters[3], src:getImgUrl("html"), url:"https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"},
+      {name: "Trello", filter: this.filters[4], src:getImgUrl("trello"), url:"https://trello.com/"},
+      {name: "Kubernetes", filter: this.filters[2], src:getImgUrl("kubernetes"), url:"https://kubernetes.io/"}
     ];
   },
   methods: {
@@ -138,12 +141,6 @@ figure {
   height: 76px;
   width: 128px;
 }
-
-figure:hover {
-  -webkit-animation: bounce 1s;
-  animation: bounce 1s;
-}
-
 
 .tabs li a {color: black;}
 .tabs li.is-active a {border-bottom-color: black;}

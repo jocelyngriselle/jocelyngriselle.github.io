@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar is-fixed-top">
+  <nav class="navbar is-transparent">
     <div class="navbar-brand">
-      <div class="navbar-item">
+      <div class="navbar-item" title="Envoyer un mail">
         <a target="blank" href="mailto:jocelyn@griselle.io">
           <font-awesome-icon
             size="lg"
@@ -9,7 +9,7 @@
           />
         </a>
       </div>
-        <div class="navbar-item">
+        <div class="navbar-item" title="Aller sur le profil LinkedIn">
         <a target="blank" href="https://www.linkedin.com/in/jocelyngriselle/">
           <font-awesome-icon
             size="lg"
@@ -17,7 +17,7 @@
           />
         </a>
       </div>
-        <div class="navbar-item">
+        <div class="navbar-item" title="Aller sur le profil Twitter">
         <a target="blank" href="https://twitter.com/jocelyngriselle">
           <font-awesome-icon
             size="lg"
@@ -25,11 +25,19 @@
           />
         </a>
       </div>
-        <div class="navbar-item">
+      <div class="navbar-item" title="Aller sur le profil GitHub">
         <a target="blank" href="https://github.com/jocelyngriselle">
           <font-awesome-icon
             size="lg"
             :icon="{ prefix: 'fab', iconName: 'github'}"
+          />
+        </a>
+      </div>
+      <div class="navbar-item" title="Télécharger le CV">
+        <a download href="../assets/me_head.jpg">
+          <font-awesome-icon
+            size="lg"
+            icon="file"
           />
         </a>
       </div>
@@ -80,14 +88,6 @@ a:hover {
   color: #23D160;
 }
 
-svg {
-  color: black;
-}
-
-svg:hover {
-  fill: #23D160;
-  color: #23D160;
-}
 svg {
   color: black;
 }

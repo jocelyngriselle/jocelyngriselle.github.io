@@ -1,5 +1,6 @@
 <template>
-  <section class=" hero is-fullheight">
+  <section class=" hero">
+    <div class="hero-body has-text-centered">
         <div class="card">
           <div class="card-content">
             <div class="media">
@@ -10,7 +11,12 @@
               </div>
               <div class="media-content">
                 <p class="title is-4">Jocelyn Griselle</p>
-                <p class="subtitle is-6">jocelyn@griselle.io</p>
+                <p class="subtitle is-6"><a href="mailto:jocelyn@griselle.io">
+                  <font-awesome-icon
+                    size="lg"
+                    icon="envelope"
+                    :style="{ color: 'black' }"
+                  /> jocelyn@griselle.io</a></p>
               </div>
             </div>
             <div class="content">
@@ -45,6 +51,7 @@
             </div>
           </div>
         </div>
+    </div>
   </section>
 </template>
 
@@ -55,6 +62,11 @@
 </script>
 
 <style scoped>
+
+a {
+  color: #23D160;
+}
+
 section {
   display: flex;
   align-items: center;

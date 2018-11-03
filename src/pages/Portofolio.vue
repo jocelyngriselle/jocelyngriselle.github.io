@@ -1,100 +1,236 @@
 <template>
   <section class="container">
-    <div class="card">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">Valoo</p>
-            <p class="subtitle is-6">
-              <a href="https://www.valoo.com" target="blank">valoo.com</a>
-            </p>
-          </div>
-        </div>
-
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="../assets/me_head.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
         <div class="content">
-          Développement du site internet et de ses fonctionnalitées.<br/>
-          <a href="#">#Django</a> <a href="#">#Python</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          <p>
+            <strong>Site web personnel</strong> @JG
+            <br>
+            Développement de mon site web personnel
+          </p>
         </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">Valoo Indexation</p>
-            <p class="subtitle is-6">
-              <a href="https://www.valoo.com" target="blank">valoo.com</a>
-            </p>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item">
+              <span class="tag is-primary">Vue JS</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-primary">Javascript</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-primary">Bulma</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-warning">Netlify</span>
+            </a>
           </div>
-        </div>
-        <div class="content">
-          Mise en place d'un microservice d'indexation des informations produits et d'une
-          API pour que les autres microservices puissent acceder à ces informations.<br/>
-          <a href="#">#Django</a>
-          <a href="#">#Docker</a>
-          <a href="#">#Scrapy</a>
-          <a href="#">#Elastic</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-        </div>
+        </nav>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">Valoo Tagging</p>
-            <p class="subtitle is-6"><a href="https://www.valoo.com" target="blank">valoo.com</a></p>
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="../assets/valoo.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Moteur d'indexation de produit</strong> @VALOO
+            <br>
+            Développement d’un webservice accessible par API  15 millions de
+            produits sur les sites marchands ( Fnac, Decathlon, Ikea etc)
+          </p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item">
+              <span class="tag is-success">Python</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">DjangoRestFramework</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">Scrapy</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">Elastic</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-warning">Docker</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-warning">Kubernetes</span>
+            </a>
           </div>
-        </div>
-
-        <div class="content">
-          Mise en place d'une interface web outil de tagging de produit pour
-          améliorer la pertinence du moteur de recherche et constituer une
-          base d'apprentissage pour du Machine Leaning.<br/>
-          <a href="#">#Vuejs</a>
-          <a href="#">#Javascript</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-        </div>
+        </nav>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">Alexandria</p>
-            <p class="subtitle is-6"></p>
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="../assets/valoo.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Plateforme Web d'inventaire et services</strong> @VALOO
+            <br>
+            Développement du site web permettant d'inventoriser ses objets et de les gérer (assurer / vendre etc)
+          </p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item">
+              <span class="tag is-success">Python</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">Django</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">Postgresql</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-warning">Heroku</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-primary">Bootstrap</span>
+            </a>
           </div>
-        </div>
-        <div class="content">
-          Mise en place d'une plateforme d'indexation de prix sur Amazon.<br/>
-          <a href="#">#Amazon Web Services</a>
-          <a href="#">#Python</a>
-          <a href="#">#Sql</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-        </div>
+        </nav>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">Alexandria</p>
-            <p class="subtitle is-6"></p>
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="../assets/valoo.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Outil Web de tagging produit</strong> @VALOO
+            <br>
+            Développement du site web, Développement d’un moteur d’indexation de Produits
+            Développement d’API pour webservices f,dlsmf,dskl jfkdlsfjkldsjfklds jfkdljfkdlsjfkdlsjf fjdksljfdkslfjklds
+          </p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item">
+              <span class="tag is-primary">Vue JS</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-primary">Javascript</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-primary">Boostrap</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">Django</span>
+            </a>
           </div>
-        </div>
-        <div class="content">
-          Mise en place d'une plateforme de reception de commandes et gestion de stocks.<br/>
-          <a href="#">#Python</a> <a href="#">#Django</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-        </div>
+        </nav>
       </div>
-    </div>
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="../assets/alexandria.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Moteur de comparaison de prix</strong> @ALEXANDRIA
+            <br>
+            Création d’un système de mise à jour dynamique de prix sur les plateformes Amazon en utilisant
+          </p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item">
+              <span class="tag is-success">Python</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">Redis</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">AWS</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">SQL</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="../assets/alexandria.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Site Web interne de gestion de stocks</strong> @ALEXANDRIA
+            <br>
+            Développement d’outils internes de gestion des stocks et relations clients.
+          </p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item">
+              <span class="tag is-success">Python</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">Django</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-primary">JQuery</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="../assets/onera.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Ingénieur étude et developpement</strong> @ONERA
+            <br>
+            Définition de l'architecture du radar (30 serveurs - 30 switchs - 1500 équipements électroniques).
+            Développement d'applications temps réel de traitements distribués de données.
+            Développement de scripts d'administration et d'analyse de performances.
+          </p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item">
+              <span class="tag is-success">Python</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-danger">C</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-danger">Traitement du signal</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </article>
   </section>
 </template>
 
@@ -107,11 +243,11 @@ export default {
 <style scoped>
 section {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
-  margin-top: 3%;
+  margin-bottom: 3%;
+  max-width: 70%;
 }
 
 .card {
