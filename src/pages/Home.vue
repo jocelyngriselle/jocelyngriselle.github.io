@@ -26,7 +26,6 @@ export default {
 </script>
 
 <style scoped>
-
 .hero-body {
   text-align: center;
   align-items: center;

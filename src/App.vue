@@ -40,10 +40,15 @@ export default {
 }
 section {
   display: flex;
-  padding-top: 50px;
-  width: 90%;
+  top: 50px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
+  width: auto;
+  height: auto;
 }
 a {
   text-decoration: none;

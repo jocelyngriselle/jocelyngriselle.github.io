@@ -1,37 +1,5 @@
 <template>
-  <section class="container">
-    <article class="media">
-      <figure class="media-left">
-        <p class="image is-64x64">
-          <img src="../assets/me_head.jpg">
-        </p>
-      </figure>
-      <div class="media-content">
-        <div class="content">
-          <p>
-            <strong>Site web personnel</strong> @JG
-            <br>
-            Développement de mon site web personnel
-          </p>
-        </div>
-        <nav class="level is-mobile">
-          <div class="level-left">
-            <a class="level-item">
-              <span class="tag is-primary">Vue JS</span>
-            </a>
-            <a class="level-item">
-              <span class="tag is-primary">Javascript</span>
-            </a>
-            <a class="level-item">
-              <span class="tag is-primary">Bulma</span>
-            </a>
-            <a class="level-item">
-              <span class="tag is-warning">Netlify</span>
-            </a>
-          </div>
-        </nav>
-      </div>
-    </article>
+  <section>
     <article class="media">
       <figure class="media-left">
         <p class="image is-64x64">
@@ -41,10 +9,11 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Moteur d'indexation de produit</strong> @VALOO
+            <strong>Moteur d'indexation de produit</strong> @VALOO - 2018
             <br>
-            Développement d’un webservice accessible par API  15 millions de
-            produits sur les sites marchands ( Fnac, Decathlon, Ikea etc)
+            Développement d'un système distribué scalable permettant de référencer et mettre à jour 15 millions de
+            produits sur des sites marchands ( Fnac, Decathlon, Ikea etc).
+            Développement d’un webservice accessible par API  permettant de chercher parmis ces produits.
           </p>
         </div>
         <nav class="level is-mobile">
@@ -80,7 +49,39 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Plateforme Web d'inventaire et services</strong> @VALOO
+            <strong>Outil Web de tagging produit</strong> @VALOO - 2018
+            <br>
+            Développement d'une page web permettant de chercher et tagger
+            dynamiquement des produits selon leur catégorie ( smartphone, TV, vélo etc)</p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item">
+              <span class="tag is-primary">Vue JS</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-primary">Javascript</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-primary">Boostrap</span>
+            </a>
+            <a class="level-item">
+              <span class="tag is-success">Django</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="../assets/valoo.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Plateforme Web d'inventaire et services</strong> @VALOO - 2017
             <br>
             Développement du site web permettant d'inventoriser ses objets et de les gérer (assurer / vendre etc)
           </p>
@@ -106,39 +107,7 @@
         </nav>
       </div>
     </article>
-    <article class="media">
-      <figure class="media-left">
-        <p class="image is-64x64">
-          <img src="../assets/valoo.jpg">
-        </p>
-      </figure>
-      <div class="media-content">
-        <div class="content">
-          <p>
-            <strong>Outil Web de tagging produit</strong> @VALOO
-            <br>
-            Développement du site web, Développement d’un moteur d’indexation de Produits
-            Développement d’API pour webservices f,dlsmf,dskl jfkdlsfjkldsjfklds jfkdljfkdlsjfkdlsjf fjdksljfdkslfjklds
-          </p>
-        </div>
-        <nav class="level is-mobile">
-          <div class="level-left">
-            <a class="level-item">
-              <span class="tag is-primary">Vue JS</span>
-            </a>
-            <a class="level-item">
-              <span class="tag is-primary">Javascript</span>
-            </a>
-            <a class="level-item">
-              <span class="tag is-primary">Boostrap</span>
-            </a>
-            <a class="level-item">
-              <span class="tag is-success">Django</span>
-            </a>
-          </div>
-        </nav>
-      </div>
-    </article>
+
     <article class="media">
       <figure class="media-left">
         <p class="image is-64x64">
@@ -148,9 +117,10 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Moteur de comparaison de prix</strong> @ALEXANDRIA
+            <strong>Moteur de comparaison de prix</strong> @ALEXANDRIA - 2016
             <br>
-            Création d’un système de mise à jour dynamique de prix sur les plateformes Amazon en utilisant
+            Création d’un système de surveillance et mise à jour dynamique de
+            prix de produits Amazon
           </p>
         </div>
         <nav class="level is-mobile">
@@ -180,9 +150,9 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Site Web interne de gestion de stocks</strong> @ALEXANDRIA
+            <strong>Site Web interne</strong> @ALEXANDRIA - 2015
             <br>
-            Développement d’outils internes de gestion des stocks et relations clients.
+            Développement d’outils web internes de gestion des stocks et relations clients.
           </p>
         </div>
         <nav class="level is-mobile">
@@ -209,9 +179,10 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Ingénieur étude et developpement</strong> @ONERA
+            <strong>Ingénieur étude et developpement</strong> @ONERA - 2014
             <br>
-            Définition de l'architecture du radar (30 serveurs - 30 switchs - 1500 équipements électroniques).
+            Définition de l'architecture d'un radar longue portée (30 serveurs -
+            30 switchs - 1500 équipements électroniques).
             Développement d'applications temps réel de traitements distribués de données.
             Développement de scripts d'administration et d'analyse de performances.
           </p>
@@ -242,12 +213,14 @@ export default {
 
 <style scoped>
 section {
-  display: flex;
   justify-content: left;
   align-content: space-between;
   flex-wrap: wrap;
+  flex-direction: row;
+  width: 70%;
+  margin-top: 3%;
   margin-bottom: 3%;
-  max-width: 70%;
+  position: relative;
 }
 
 .card {

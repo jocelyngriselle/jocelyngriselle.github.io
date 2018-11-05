@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-transparent">
+  <nav class="navbar is-fixed-top is-transparent">
     <div class="navbar-brand">
       <div class="navbar-item" title="Envoyer un mail">
         <a target="blank" href="mailto:jocelyn@griselle.io">
@@ -34,7 +34,7 @@
         </a>
       </div>
       <div class="navbar-item" title="Télécharger le CV">
-        <a download href="../assets/me_head.jpg">
+        <a download href="../assets/CV.pdf">
           <font-awesome-icon
             size="lg"
             icon="file"

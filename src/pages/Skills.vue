@@ -96,7 +96,6 @@ section {
   align-items: center;
   justify-content: center;
   align-content: space-between;
-  margin-top: 5%;
 }
 
 .skills {
