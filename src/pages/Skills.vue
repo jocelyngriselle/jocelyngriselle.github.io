@@ -1,22 +1,22 @@
 <template>
   <section>
-        <div class="tabs is-medium">
-          <ul>
-            <li v-on:click="activeFilter=filter.name"
-                v-for="filter in filters"
-                :class="[filter.class, activated(filter.name)]">
-              <a>{{ filter.name }}</a>
-            </li>
-          </ul>
-        </div>
-        <transition-group
-          name="skill"
-          tag="div"
-          class="skills">
-          <div :key="skill.name" v-for="skill in filteredSkills">
-            <a :href="skill.url" target="_blank"><figure class="image"><img :src="skill.src" :alt="skill.name"></figure></a>
-          </div>
-        </transition-group>
+    <div class="tabs is-medium">
+      <ul>
+        <li v-on:click="activeFilter=filter.name"
+            v-for="filter in filters"
+            :class="[filter.class, activated(filter.name)]">
+          <a>{{ filter.name }}</a>
+        </li>
+      </ul>
+    </div>
+    <transition-group
+      name="skill"
+      tag="div"
+      class="skills">
+      <div :key="skill.name" v-for="skill in filteredSkills">
+        <a :href="skill.url" target="_blank"><figure class="image"><img :src="skill.src" :alt="skill.name"></figure></a>
+      </div>
+    </transition-group>
   </section>
 </template>
 
@@ -94,7 +94,7 @@ export default {
 section {
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   align-content: space-between;
   margin-top: 5%;
 }
@@ -105,12 +105,6 @@ section {
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
-}
-
-/* base */
-.company {
-  backface-visibility: hidden;
-  z-index: 1;
 }
 
 /* moving */
@@ -137,7 +131,8 @@ section {
 }
 
 figure {
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   height: 76px;
   width: 128px;
 }
