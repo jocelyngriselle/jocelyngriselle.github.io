@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="tabs is-medium">
+    <div class="tabs is-medium is-centered">
       <ul>
         <li v-on:click="activeFilter=filter.name"
             v-for="filter in filters"
