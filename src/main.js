@@ -8,9 +8,6 @@ import About from './pages/About.vue'
 import Skills from './pages/Skills.vue'
 import Portofolio from './pages/Portofolio.vue'
 import Contact from './pages/Contact.vue'
-import './../node_modules/bulma/css/bulma.css';
-import './../node_modules/animate.css/animate.min.css';
-import './../node_modules/@fortawesome/fontawesome/styles.css'
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false;

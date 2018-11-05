@@ -34,6 +34,9 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+@import url('bulma/css/bulma.css');
+@import url('./../node_modules/animate.css/animate.min.css');
+@import url('./../node_modules/@fortawesome/fontawesome/styles.css');
 
 #app {
   font-family: 'Didact Gothic', sans-serif;
