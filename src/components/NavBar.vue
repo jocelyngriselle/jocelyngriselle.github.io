@@ -81,8 +81,12 @@ nav {
 .navbar-menu {
   margin-right: 30px;
 }
+
 a.navbar-item.is-active, .navbar-link.is-active {
   color: #23D160;
+}
+a.navbar-item:hover {
+    color: #23D160;
 }
 a:hover {
   color: #23D160;
