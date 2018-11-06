@@ -9,7 +9,7 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Moteur d'indexation de produit</strong> @VALOO - 2018
+            <strong>Moteur d'indexation de produit</strong> <em>@VALOO - 2018</em>
             <br>
             Développement d'un système distribué scalable permettant de référencer et mettre à jour 15 millions de
             produits sur des sites marchands ( Fnac, Decathlon, Ikea etc) et du webservice associé permettant de chercher parmis ces produits.
@@ -48,9 +48,9 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Outil Web de tagging produit</strong> @VALOO - 2018
+            <strong>Outil Web de tagging produit</strong> <em>@VALOO - 2018</em>
             <br>
-            Développement d'une page web permettant de chercher et tagger
+            Développement d'une WebApp permettant de chercher et tagger
             dynamiquement des produits selon leur catégorie ( smartphone, TV, vélo etc)
           </p>
         </div>
@@ -81,9 +81,9 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Plateforme Web d'inventaire et services</strong> @VALOO - 2017
+            <strong>Plateforme Web d'inventaire et services</strong> <em>@VALOO - 2017</em>
             <br>
-            Développement du site web permettant d'inventoriser ses objets et
+            Développement du site Web permettant d'inventoriser ses objets et
             de les gérer (assurer / vendre etc)
           </p>
         </div>
@@ -118,7 +118,7 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Moteur de comparaison de prix</strong> @ALEXANDRIA - 2016
+            <strong>Moteur de comparaison de prix</strong> <em>@ALEXANDRIA - 2016</em>
             <br>
             Création d’un système de surveillance et mise à jour dynamique de
             prix de produits Amazon
@@ -151,7 +151,7 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Site Web interne</strong> @ALEXANDRIA - 2015
+            <strong>Site Web interne</strong> <em>@ALEXANDRIA - 2015</em>
             <br>
             Développement d’outils web internes de gestion des stocks et relations clients
           </p>
@@ -180,7 +180,7 @@
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Ingénieur étude et developpement</strong> @ONERA - 2014
+            <strong>Ingénieur étude et developpement</strong> <em>@ONERA - 2014</em>
             <br>
             Définition de l'architecture d'un radar longue portée (30 serveurs -
             30 switchs - 1500 équipements électroniques), développement
@@ -223,7 +223,6 @@ section {
   margin-bottom: 3%;
   position: relative;
 }
-
 .card {
   margin-top: 20px;
   max-width: 250px;

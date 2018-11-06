@@ -58,6 +58,8 @@ export default {
       {name: "Docker", filter: this.filters[2], src:getImgUrl("docker"), url:"https://www.docker.com/"},
       {name: "Netlify", filter: this.filters[2], src:getImgUrl("netlify"), url:"https://www.netlify.com/"},
       {name: "Heroku", filter: this.filters[2], src:getImgUrl("heroku"), url:"https://www.heroku.com/"},
+      {name: "CircleCI", filter: this.filters[2], src:getImgUrl("circleci"), url:"https://circleci.com/"},
+      {name: "Sentry", filter: this.filters[2], src:getImgUrl("sentry"), url:"https://sentry.io/welcome/"},
       {name: "React", filter: this.filters[3], src:getImgUrl("react"), url:"https://reactjs.org/"},
       {name: "Elastic Stack", filter: this.filters[1], src:getImgUrl("elk"), url:"https://www.elastic.co/fr/"},
       {name: "Boostrap", filter: this.filters[3], src:getImgUrl("bootstrap"), url:"https://getbootstrap.com/"},
@@ -96,6 +98,7 @@ section {
   align-items: center;
   justify-content: center;
   align-content: space-between;
+  width: 70%;
 }
 
 .skills {
