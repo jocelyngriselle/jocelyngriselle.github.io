@@ -99,6 +99,8 @@ section {
   justify-content: center;
   align-content: space-between;
   width: 70%;
+  margin-top: 3%;
+  position: relative;
 }
 
 .skills {
@@ -130,6 +132,10 @@ figure {
   margin-left: 20px;
   height: 76px;
   width: 128px;
+  display: flex;
+}
+img {
+  margin: auto;
 }
 
 .tabs li a {color: black;}
