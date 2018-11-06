@@ -106,24 +106,17 @@ section {
   justify-content: center;
 }
 
-/* moving */
 .skill-move {
   transition: all 600ms ease-in-out 50ms;
 }
-
-/* appearing */
 .skill-enter-active {
   transition: all 400ms ease-out;
 }
-
-/* disappearing */
 .skill-leave-active {
   transition: all 200ms ease-in;
   position: absolute;
   z-index: 0;
 }
-
-/* appear at / disappear to */
 .skill-enter,
 .skill-leave-to {
   opacity: 0;

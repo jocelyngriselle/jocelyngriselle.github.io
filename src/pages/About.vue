@@ -9,11 +9,11 @@
           apprendre des nouvelles choses depuis.</p>
       <h4>Pourquoi devenir freelance ?</h4>
       <p>Après 6 années en tant que salarié dont quatre en tant que développeur
-        web dans des start ups j'ai eu envie de faire plus. De pouvoir choisir
+        web dans des start-ups j'ai eu envie de faire plus. De pouvoir choisir
         mon lieu de travail, mes clients et varier mes taches au quotidien.</p>
-      <h4>Pourquoi vous choisir vous plutôt qu un autre ?</h4>
+      <h4>Pourquoi vous choisir vous plutôt qu'un autre ?</h4>
       <p>Je dirai que mes points fort sont l’écoute et l'ouverture d'esprit pour
-        envisager plusieurs approches pour trouver
+        envisager plusieurs approches afin de trouver
         la solution optimale pour répondre au mieux au besoin du client.</p>
       <h4>Et votre temps libre ?</h4>
       <p>J'aime la mer et la bretagne. Surtout le finistere nord pour son
