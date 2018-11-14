@@ -1,24 +1,23 @@
 <template>
   <section>
     <div class="content">
-      <h2>Entretien avec moi-même</h2>
-      <h4>Comment vous êtes vous lancé dans l'informatique ?</h4>
-      <p>C'est venu petit à petit, j'aimais bien les maths donc je suis
-          allé en fac de mathématiques ou j'ai découvert l'informatique et
-          la programmation. Je n'ai jamais cessé vouloir progresser et
-          apprendre des nouvelles choses depuis.</p>
-      <h4>Pourquoi devenir freelance ?</h4>
-      <p>Après 6 années en tant que salarié dont 4 en tant que développeur
-        web dans des start-ups j'ai eu envie de faire plus. Pouvoir choisir
-        mon lieu de travail, mes clients et varier mes tâches au quotidien.</p>
-      <h4>Pourquoi vous choisir vous plutôt qu'un autre ?</h4>
-      <p>Je dirai que mes points fort sont l’écoute et l'ouverture d'esprit pour
-        envisager plusieurs approches afin de trouver
-        la solution optimale pour répondre au mieux au besoin du client.</p>
-      <h4>Et votre temps libre ?</h4>
-      <p>J'aime la mer et la bretagne. Surtout le Finistère nord pour son
-        calme, ses grandes plages sauvages et la possibilité de surfer
-        occasionnellement.</p>
+      <h2>Jocelyn, 30 ans, développeur breton</h2>
+      <div class="card">
+        <div class="card-content">
+      <p>J'aime <em>Python</em>, j'aime le <em>web</em>, j'aime apprendre et partager.</p>
+      <p>Après un <em>diplôme d'ingénieur en Informatique et télécommunications</em> à Rennes
+        j'ai découvert la programmation web en 2012 via des projets personnels.
+        J'ai alors décidé d'en faire mon métier et après <em>4 années en tant
+        que développeur web dans des start ups</em> je me mets à mon compte
+        pour varier mes missions et mes clients.</p>
+      <p>Je suis présent a quelques Meetups sur Nantes (Python, Vuejs notamment )
+        et mes prochains projets personnels sont d'ouvrir un <em>blog</em>, de
+        participer à de l'<em>open source</em> et de devenir <em>Mentor
+        OpenClassroom Python</em>.</p>
+        <p>N'hésitez pas à me contacter pour toute demande!</p>
+        <p>Jocelyn</p>
+      </div>
+    </div>
     </div>
     <div class="content recommandation">
       <h2>Ce qu'ils en disent</h2>
@@ -90,8 +89,8 @@ section {
   position: relative;
 }
 .content {
-  flex-grow: 2;
-  flex-basis: 60%;
+  flex-grow: 1;
+  flex-basis: 50%;
   padding-right: 50px;
 }
 .content figure {
@@ -100,7 +99,10 @@ section {
 }
 .recommandation {
   flex-grow: 1;
-  flex-basis: 40%;
+  flex-basis: 50%;
+}
+em {
+  color: #23D160;
 }
 h4 {
   color: #23D160;

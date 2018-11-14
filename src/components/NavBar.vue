@@ -34,7 +34,7 @@
         </a>
       </div>
       <div class="navbar-item" title="Télécharger le CV">
-        <a download href="../assets/CV.pdf">
+        <a download href="/static/cv.pdf">
           <font-awesome-icon
             size="lg"
             icon="file"
@@ -62,14 +62,14 @@
 </template>
 
 <script>
-    export default {
-        name: "NavBar",
-        data() {
-          return {
-  	       showNav: false
-         }
-       }
-    }
+export default {
+    name: "NavBar",
+    data() {
+      return {
+       showNav: false,
+     }
+   }
+}
 </script>
 
 <style scoped>
