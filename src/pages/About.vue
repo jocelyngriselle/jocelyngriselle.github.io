@@ -6,14 +6,13 @@
         <div class="card-content">
       <p>J'aime <em>Python</em>, j'aime le <em>web</em>, j'aime apprendre et partager.</p>
       <p>Après un <em>diplôme d'ingénieur en Informatique et
-        télécommunications</em> à Rennes j'ai découvert la programmation web
-        en 2012 via des projets personnels.
-        J'ai alors décidé d'en faire mon métier et après <em>4 années en tant
-        que développeur web dans des start ups</em> je me mets à mon compte
+        télécommunications</em> à Rennes c'est par passion que je me
+        suis lancé dans la programmation web en 2014. Après maintenant <em>4 années en tant
+        que développeur web au sein de différentes start ups</em>, je me lance à mon compte
         pour varier mes missions et mes clients.</p>
-      <p>Je suis présent a quelques Meetups sur Nantes (Python, Vuejs notamment )
-        et mes prochains projets personnels sont d'ouvrir un <em>blog</em>, de
-        participer à de l'<em>open source</em> et de devenir <em>Mentor
+      <p>Vous pourrez me rencontrer parfois à quelques <em>Meetups</em> sur Nantes (Python, Vuejs notamment).
+        Je projette également d'ouvrir un <em>blog</em>,
+        participer à de l'<em>open source</em> et devenir <em>Mentor
         OpenClassroom Python</em>.</p>
         <p>N'hésitez pas à me contacter pour toute demande!</p>
         <p>Jocelyn</p>
