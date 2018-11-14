@@ -1,12 +1,13 @@
 <template>
   <section>
     <div class="content">
-      <h2>Jocelyn, 30 ans, développeur breton</h2>
+      <h2>Jocelyn, 30 ans, développeur</h2>
       <div class="card">
         <div class="card-content">
       <p>J'aime <em>Python</em>, j'aime le <em>web</em>, j'aime apprendre et partager.</p>
-      <p>Après un <em>diplôme d'ingénieur en Informatique et télécommunications</em> à Rennes
-        j'ai découvert la programmation web en 2012 via des projets personnels.
+      <p>Après un <em>diplôme d'ingénieur en Informatique et
+        télécommunications</em> à Rennes j'ai découvert la programmation web
+        en 2012 via des projets personnels.
         J'ai alors décidé d'en faire mon métier et après <em>4 années en tant
         que développeur web dans des start ups</em> je me mets à mon compte
         pour varier mes missions et mes clients.</p>
