@@ -14,7 +14,6 @@
         </h2>
         <br>
     </div>
-  </div>
 </section>
 
 </template>
@@ -35,6 +34,7 @@ export default {
   flex-direction: column;
 }
 img {
+  max-width: 250px;
   padding: 5px;
   border: 1px solid #ccc;
 }

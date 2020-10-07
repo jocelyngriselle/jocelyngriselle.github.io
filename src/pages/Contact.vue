@@ -4,7 +4,7 @@
       <div class="card-content">
         <div class="media">
           <div class="media-left">
-            <figure class="image is-48x48 ">
+            <figure class="image is-64x64">
               <img class="is-rounded" src="../assets/me_head.png" alt="Placeholder image">
             </figure>
           </div>
