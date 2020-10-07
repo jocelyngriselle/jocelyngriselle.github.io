@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-fixed-top is-transparent">
+  <nav class="navbar is-transparent">
     <div class="navbar-brand">
       <div class="navbar-item" title="Envoyer un mail">
         <a target="blank" href="mailto:jocelyn@griselle.io">
@@ -74,12 +74,17 @@ export default {
 
 <style scoped>
 nav {
+  width: 100%;
    font-size: large;
    background-color: white;
    z-index: 1;
 }
 .navbar-menu {
   margin-right: 30px;
+}
+
+navbar-item svg:hover {
+  fill: #23D160;
 }
 
 a.navbar-item.is-active, .navbar-link.is-active {

@@ -30,8 +30,7 @@ export default {
         {name: 'Tous', class: ''},
         {name: 'Backend', class: 'is-success'},
         {name: 'Ops', class: 'is-warning'},
-        {name: 'Frontend', class: 'is-primary'},
-        {name: 'Outils', class: 'is-link'}
+        {name: 'Frontend', class: 'is-primary'}
       ],
       skills : [],
     }
@@ -49,8 +48,8 @@ export default {
       {name: "Flask", filter: this.filters[1], src:getImgUrl("flask"), url:"http://flask.pocoo.org/"},
       {name: "Rest", filter: this.filters[1], src:getImgUrl("rest"), url:"https://www.django-rest-framework.org/"},
       {name: "Redis", filter: this.filters[1], src:getImgUrl("redis"), url:"https://redis.io/"},
-      {name: "GitHub", filter: this.filters[4], src:getImgUrl("github"), url:"https://github.com/"},
-      {name: "GitLab", filter: this.filters[4], src:getImgUrl("gitlab"), url:"https://about.gitlab.com/"},
+      {name: "GitHub", filter: this.filters[2], src:getImgUrl("github"), url:"https://github.com/"},
+      {name: "GitLab", filter: this.filters[2], src:getImgUrl("gitlab"), url:"https://about.gitlab.com/"},
       {name: "Postgresql", filter: this.filters[1], src:getImgUrl("postgresql"), url:"https://www.postgresql.org/"},
       {name: "Scrapy", filter: this.filters[1], src:getImgUrl("scrapy"), url:"https://scrapy.org/"},
       {name: "Mongodb", filter: this.filters[1], src:getImgUrl("mongodb"), url:"https://www.mongodb.com/fr"},
@@ -65,7 +64,6 @@ export default {
       {name: "Boostrap", filter: this.filters[3], src:getImgUrl("bootstrap"), url:"https://getbootstrap.com/"},
       {name: "Css", filter: this.filters[3], src:getImgUrl("css"), url:"https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"},
       {name: "Html", filter: this.filters[3], src:getImgUrl("html"), url:"https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"},
-      {name: "Trello", filter: this.filters[4], src:getImgUrl("trello"), url:"https://trello.com/"},
       {name: "Kubernetes", filter: this.filters[2], src:getImgUrl("kubernetes"), url:"https://kubernetes.io/"}
     ];
   },
@@ -99,8 +97,6 @@ section {
   justify-content: center;
   align-content: space-between;
   width: 70%;
-  margin-top: 3%;
-  position: relative;
 }
 
 .skills {
@@ -138,6 +134,12 @@ img {
   margin: auto;
 }
 
+@media screen and (max-width: 500px){
+  .tabs {
+    display: none;
+  }
+
+}
 .tabs li a {color: black;}
 .tabs li.is-active a {border-bottom-color: black;}
 

@@ -38,27 +38,28 @@ export default {
 @import url('./../node_modules/animate.css/animate.min.css');
 @import url('./../node_modules/@fortawesome/fontawesome/styles.css');
 
-#app {
+
+
+body, html {
+  height: 100%;
   font-family: 'Didact Gothic', sans-serif;
+}
+
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 section {
   display: flex;
-  top: 50px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  height: auto;
+  flex: 1;
+  align-content: center;
 }
 a {
   text-decoration: none;
 }
-navbar-item svg:hover {
-  fill: #23D160;
-}
+
 a:hover {
   color: #23D160;
 }

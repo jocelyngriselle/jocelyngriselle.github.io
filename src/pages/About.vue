@@ -81,7 +81,6 @@ export default {
 <style scoped>
 section {
   justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
   width: 80%;
   margin-top: 3%;
