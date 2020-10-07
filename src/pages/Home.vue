@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="hero-body has-text-centered">
       <figure class="image">
-        <img class="image is-rounded" src="../assets/me_head.jpg" alt="Description">
+        <img class="image is-rounded" src="../assets/me_head.png" alt="Description">
       </figure>
         <h1 class="title is-2">
           Jocelyn Griselle

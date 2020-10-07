@@ -5,7 +5,7 @@
         <div class="media">
           <div class="media-left">
             <figure class="image is-48x48 ">
-              <img class="is-rounded" src="../assets/me_head.jpg" alt="Placeholder image">
+              <img class="is-rounded" src="../assets/me_head.png" alt="Placeholder image">
             </figure>
           </div>
           <div class="media-content">
