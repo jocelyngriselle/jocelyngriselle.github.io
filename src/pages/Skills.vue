@@ -30,7 +30,7 @@ export default {
         {name: 'Tous', class: ''},
         {name: 'Backend', class: 'is-success'},
         {name: 'Ops', class: 'is-warning'},
-        {name: 'Frontend', class: 'is-primary'}
+        {name: 'Frontend', class: 'is-link'}
       ],
       skills : [],
     }
