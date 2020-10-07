@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar/>
-    <transition enter-active-class="animated fadeInRight">
+    <transition enter-active-class="animated zoomIn" mode="out-in">
       <router-view/>
     </transition>
   </div>
@@ -42,7 +42,7 @@ export default {
 
 body, html {
   height: 100%;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'system-ui', 'Didact Gothic', sans-serif;
 }
 
 #app {
