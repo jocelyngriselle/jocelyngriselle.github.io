@@ -8,9 +8,7 @@
           Jocelyn Griselle
         </h1>
         <h2 class="subtitle is-4">
-          Développeur <em>Python</em> &
-          <em>Web</em> fullstack <br/>freelance
-           sur <em>Nantes</em>.
+          Développeur <em>Fullstack</em> sur <em>Nantes</em>.
         </h2>
         <br>
     </div>

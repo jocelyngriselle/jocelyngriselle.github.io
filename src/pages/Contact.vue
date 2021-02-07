@@ -10,12 +10,12 @@
           </div>
           <div class="media-content">
             <p class="title is-4">Jocelyn Griselle</p>
-            <p class="subtitle is-6"><a href="mailto:jocelyn@griselle.io">
+            <p class="subtitle is-6"><a href="mailto:jocelyn.griselle@icloud.com">
               <font-awesome-icon
                 size="lg"
                 icon="envelope"
                 :style="{ color: 'black' }"
-              /> jocelyn@griselle.io</a></p>
+              /> jocelyn.griselle@icloud.com</a></p>
           </div>
         </div>
         <div class="content">

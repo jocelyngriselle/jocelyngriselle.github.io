@@ -2,7 +2,7 @@
   <nav class="navbar is-transparent">
     <div class="navbar-brand">
       <div class="navbar-item" title="Envoyer un mail">
-        <a target="blank" href="mailto:jocelyn@griselle.io">
+        <a target="blank" href="mailto:jocelyn.griselle@icloud.com">
           <font-awesome-icon
             size="lg"
             icon="envelope"
@@ -33,14 +33,14 @@
           />
         </a>
       </div>
-      <div class="navbar-item" title="Télécharger le CV">
+      <!--<div class="navbar-item" title="Télécharger le CV">
         <a download href="/static/cv.pdf">
           <font-awesome-icon
             size="lg"
             icon="file"
           />
         </a>
-      </div>
+      </div>-->
       <div class="navbar-burger burger"
           @click="showNav = !showNav"
           :class="{ 'is-active': showNav }">

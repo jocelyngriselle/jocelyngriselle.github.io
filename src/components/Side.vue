@@ -1,6 +1,6 @@
 <template>
   <aside>
-    <a target="blank" href="mailto:jocelyn@griselle.io">
+    <a target="blank" href="mailto:jocelyn.griselle@icloud.com">
       <font-awesome-icon
         size="lg"
         icon="envelope"
